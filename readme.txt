@@ -13,7 +13,7 @@ This Plugin gets the weather from google.de/google.com and shows the weather now
 This Plugin is very easy to handle. Just install with a few clicks and set it up in your configs. 
 Then include it in your sidebar e.g. with the following code:
 
-<?php spWeatherShow(); ?>
+< ?php spWeatherShow(); ? > (without spaces)
 
 == Installation ==
 
