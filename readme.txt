@@ -25,3 +25,9 @@ Then include it in your sidebar e.g. with the following code:
 
 1. Configs menu
 2. View in the Sidebar
+
+== Change Log ==
+
+* v1.4 13.07.2009 possibility for own weather-images given
+* v1.3 13.07.2009 readme.txt fixes and screenshots
+* v1.2 13.07.2009 initial release
