@@ -1,7 +1,7 @@
 <?php
 /*
  Plugin Name: spWeather
- Plugin URI: http://www.scriptpara.de
+ Plugin URI: http://wordpress.org/extend/plugins/spweather/
  Description: Shows the actual weather in your Region
  Author: Sebastian Klaus
  Version: 1.2
