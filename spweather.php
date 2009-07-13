@@ -1,10 +1,10 @@
 <?php
 /*
  Plugin Name: spWeather
- Plugin URI: http://wordpress.org/extend/plugins/spweather/
+ Plugin URI: http://www.scriptpara.de/skripte/spweather/
  Description: Shows the actual weather in your Region
  Author: Sebastian Klaus
- Version: 1.3
+ Version: 1.4
  Author URI: http://www.scriptpara.de
  */
 
@@ -59,6 +59,12 @@ function spWeatherSettings(){
 	$result .= '<th scope="row"><label for="spWeatherRegion">'.__('Country, region or city', 'spWeather').'</label></th>';
 	$spWeatherCityFound = ($settings->spWeatherCityFound == 'yes') ? '<img src="'.get_option('siteurl').'/wp-content/plugins/spWeather/icons/accept.png" alt="">' : '<img src="'.get_option('siteurl').'/wp-content/plugins/spWeather/icons/cancel.png" alt="">';
 	$result .= '<td><input type="text" class="regular-text" value="'.$settings->spWeatherRegion.'" id="spWeatherRegion" name="spWeatherRegion"/>'.$spWeatherCityFound.' <span class="description">'.__('Try different spellings, if you get no results', 'spWeather').'</span></td>';
+	$result .= '</tr>';
+	$result .= '</tr>';
+	$result .= '<tr valign="top">';
+	$result .= '<th scope="row"><label for="spWeatherPicturePath">'.__('Picturs folder', 'spWeather').'</label></th>';
+	$spWeatherPicturePath = ($settings->spWeatherPicturePath == '') ? get_option('siteurl').'/wp-content/plugins/spWeather/images/' : $settings->spWeatherPicturePath;
+	$result .= '<td><input type="text" class="regular-text" value="'.$spWeatherPicturePath.'" id="spWeatherPicturePath" name="spWeatherPicturePath"/> <span class="description">'.__('Change only, when you want to use your own pictures (names must be the same)', 'spWeather').'</span></td>';
 	$result .= '</tr>';
 	$result .= '<tr valign="top">';
 	$result .= '<th scope="row"><label for="spWeatherForecast">'.__('Forecast', 'spWeather').'</label></th>';
@@ -203,7 +209,9 @@ class spWeather_objectbuilder {
 			$new_icon = file_get_contents('http://www.google.de' . $AIcon);
 			file_put_contents($path . $icon, $new_icon);
 		}
-		return get_option('siteurl').'/wp-content/plugins/spWeather/images/' . $icon;
+		$settings = spWeatherGetSettings();
+		$spWeatherPicturePath = ($settings->spWeatherPicturePath == '') ? get_option('siteurl').'/wp-content/plugins/spWeather/images/' : $settings->spWeatherPicturePath;
+		return $spWeatherPicturePath . $icon;
 	}
 
 	/**
