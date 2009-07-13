@@ -20,3 +20,8 @@ Then include it in your sidebar e.g. with the following code:
 1. Upload spWeather to the /wp-content/plugins/ directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Optionally adjust the options
+
+== Screenshots ==
+
+1. Configs menu
+2. View in the Sidebar
