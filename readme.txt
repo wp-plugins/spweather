@@ -24,7 +24,7 @@ Then include it in your sidebar e.g. with the following code:
 == Screenshots ==
 
 1. Configs menu
-2. View in the Sidebar
+2. View on blog
 
 == Change Log ==
 
