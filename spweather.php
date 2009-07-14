@@ -4,7 +4,7 @@
  Plugin URI: http://www.scriptpara.de/skripte/spweather/
  Description: Shows the actual weather in your Region
  Author: Sebastian Klaus
- Version: 1.4
+ Version: 1.5
  Author URI: http://www.scriptpara.de
  */
 
@@ -28,6 +28,18 @@ function spWeatherInit() {
 	add_option('spWeather','', 'spWeather settings');
 }
 
+function spWeatherReadTemplateDir(){
+	$dir = opendir(dirname(__FILE__).'/templates/');
+	$files = array();
+	while ($entry = readdir($dir)) {
+		if($entry != '..' && $entry != '.'){
+			$files[] = substr($entry,0,-4);
+		}
+	}
+	closedir($dir);
+	return $files;
+}
+
 // display settings options
 function spWeatherSettings(){
 	if($_POST['spWeatherSave']){
@@ -40,6 +52,8 @@ function spWeatherSettings(){
 	}
 
 	$settings = spWeatherGetSettings();
+
+	$templates = spWeatherReadTemplateDir();
 
 	$result = '<div class="icon32" id="icon-options-general"><br/></div><div class="wrap"><h2>'.__('Settings','spWeather').'</h2></div>';
 	$result .= '<form action="'.$_SERVER['REQUEST_URI'].'" method="post">';
@@ -54,6 +68,21 @@ function spWeatherSettings(){
 	$result .= '<option value="com" '.$spWeatherLangEn.'>'.__('English', 'spWeather').'</option>';
 	$result .= '</select> ';
 	$result .= '<span class="description">'.__('Select your display language', 'spWeather').'</span></td>';
+	$result .= '</tr>';
+	$result .= '<tr valign="top">';
+	$result .= '<th scope="row"><label for="spWeatherTemplate">'.__('Template', 'spWeather').'</label></th>';
+	$result .= '<td>';
+	$result .= '<select name="spWeatherTemplate" id="spWeatherTemplate">';
+
+	foreach ($templates as $entry) {
+		if(!empty($entry)){
+			$spWeatherTemplate = ($settings->spWeatherTemplate == $entry) ? 'selected="selected"' : '';
+			$result .= '<option value="'.$entry.'" '.$spWeatherTemplate.'>'.$entry.'</option>';;
+		}
+	}
+
+	$result .= '</select> ';
+	$result .= '<span class="description">'.__('Select your template', 'spWeather').'</span></td>';
 	$result .= '</tr>';
 	$result .= '<tr valign="top">';
 	$result .= '<th scope="row"><label for="spWeatherRegion">'.__('Country, region or city', 'spWeather').'</label></th>';
@@ -117,7 +146,7 @@ function spWeatherGetSettings(){
 }
 
 // show the weather
-function spWeatherShow(){
+function spWeatherShow($aTemplate = ''){
 	$settings = spWeatherGetSettings();
 
 	if($settings->spWeatherCityFound == 'yes'){
@@ -125,45 +154,13 @@ function spWeatherShow(){
 		$weather->city = $settings->spWeatherRegion;
 		$result = $weather->getIt();
 
-		$return = '<strong>'.__('Actual in', 'spWeather').' '.$settings->spWeatherRegion.'</strong><br/>';
-		$return .= '<table>';
-		$return .= '<tr>';
-		if($settings->spWeatherImages == 'on'){
-			$return .= '<td><img src="'.$result->icon.'" /></td>';
+		if(empty($aTemplate)){
+			$spWeatherTemplate = ($settings->spWeatherTemplate == '') ? 'default' : $settings->spWeatherTemplate;
+		}else{
+			$spWeatherTemplate = $aTemplate;
 		}
-		$return .= '<td valign="top">';
-		$return .= $result->condition.'<br/>';
-		$return .= $result->temp.' '.__('Degrees', 'spWeather');
-		//$return .= $result->humidity.'<br/>';
-		//$return .= $result->wind.'<br/>';
-		$return .= '</td>';
-		$return .= '</tr>';
 
-		if($settings->spWeatherForecast != 0 || !empty($settings->spWeatherForecast)){
-			$x = 1;
-			foreach ($result->forecast as $entry) {
-				if($settings->spWeatherForecast >= $x){
-					$return .= '<tr>';
-					if($settings->spWeatherImages == 'on'){
-						$return .= '<td><img src="'.$entry->icon.'" /></td>';
-					}
-					$return .= '<td valign="top">';
-					$return .= '<strong>'.$entry->dow.'</strong><br/>';
-					$return .= $entry->condition.'<br/>';
-					if($settings->spWeatherShowMinMax == 'on'){
-						$return .= $entry->low.' '.__('Degrees', 'spWeather').' '.__('Min.', 'spWeather').'<br/>';
-						$return .= $entry->high.' '.__('Degrees', 'spWeather').' '.__('Max.', 'spWeather');
-					}else{
-						$return .= $entry->high.' '.__('Degrees', 'spWeather');
-					}
-					$return .= '</td>';
-					$return .= '</tr>';
-				}
-				$x++;
-			}
-		}
-		$return .= '<table>';
-		echo $return;
+		require_once(dirname(__FILE__).'/templates/'.$spWeatherTemplate.'.php');
 	}else{
 		echo __('Please configure spWeather settings', 'spWeather');
 	}

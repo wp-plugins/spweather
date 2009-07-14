@@ -45,6 +45,12 @@ msgstr "Versuche verschiedene Schreibweisen, wenn du kein Ergebnis erh&auml;lst"
 msgid "Picturs folder"
 msgstr "Bilderverzeichnis"
 
+msgid "Template"
+msgstr "Template"
+
+msgid "Select your template"
+msgstr "Template auswählen"
+
 msgid "Change only, when you want to use your own pictures (names must be the same)"
 msgstr "Nur &auml;ndern, wenn eigene Bilder genutzt werden sollen. (Namen m&uuml;ssen gleich sein)"
 
