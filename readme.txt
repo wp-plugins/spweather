@@ -28,8 +28,9 @@ Then include it in your sidebar e.g. with the following code:
 
 == Change Log ==
 
-* v1.6 16.07.2009 speed optimization
-* v1.5 14.07.2009 now you can choose between 2 templates or make them yourself
-* v1.4 13.07.2009 possibility for own weather-images given
-* v1.3 13.07.2009 readme.txt fixes and screenshots
-* v1.2 13.07.2009 initial release
+* v1.6.1 	17.07.2009 added language fi_FI **Thanks to Jaska**
+* v1.6 		16.07.2009 speed optimization
+* v1.5 		14.07.2009 now you can choose between 2 templates or make them yourself
+* v1.4 		13.07.2009 possibility for own weather-images given
+* v1.3 		13.07.2009 readme.txt fixes and screenshots
+* v1.2 		13.07.2009 initial release
