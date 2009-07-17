@@ -4,7 +4,7 @@ Donate link: http://www.scriptpara.de/skripte/spweather/
 Tags: weather, google
 Requires at least: 2.7
 Tested up to: 2.8
-Stable tag: 1.6 
+Stable tag: 1.6.1 
 
 This Plugin gets the weather from google.de/google.com and shows the weather now and a 4 days forecast with tiny pics
 
