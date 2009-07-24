@@ -22,7 +22,7 @@ function spWeatherMenu() {
 // init
 function spWeatherInit() {
 	// load language
-	load_plugin_textdomain('spWeather','/wp-content/plugins/spWeather/languages/');
+	load_plugin_textdomain('spWeather','/wp-content/plugins/spweather/languages/');
 
 	// Add entry to config file
 	add_option('spWeather','', 'spWeather settings');
@@ -86,13 +86,13 @@ function spWeatherSettings(){
 	$result .= '</tr>';
 	$result .= '<tr valign="top">';
 	$result .= '<th scope="row"><label for="spWeatherRegion">'.__('Country, region or city', 'spWeather').'</label></th>';
-	$spWeatherCityFound = ($settings->spWeatherCityFound == 'yes') ? '<img src="'.get_option('siteurl').'/wp-content/plugins/spWeather/icons/accept.png" alt="">' : '<img src="'.get_option('siteurl').'/wp-content/plugins/spWeather/icons/cancel.png" alt="">';
+	$spWeatherCityFound = ($settings->spWeatherCityFound == 'yes') ? '<img src="'.get_option('siteurl').'/wp-content/plugins/spweather/icons/accept.png" alt="">' : '<img src="'.get_option('siteurl').'/wp-content/plugins/spweather/icons/cancel.png" alt="">';
 	$result .= '<td><input type="text" class="regular-text" value="'.$settings->spWeatherRegion.'" id="spWeatherRegion" name="spWeatherRegion"/>'.$spWeatherCityFound.' <span class="description">'.__('Try different spellings, if you get no results', 'spWeather').'</span></td>';
 	$result .= '</tr>';
 	$result .= '</tr>';
 	$result .= '<tr valign="top">';
 	$result .= '<th scope="row"><label for="spWeatherPicturePath">'.__('Picturs folder', 'spWeather').'</label></th>';
-	$spWeatherPicturePath = ($settings->spWeatherPicturePath == '') ? get_option('siteurl').'/wp-content/plugins/spWeather/images/' : $settings->spWeatherPicturePath;
+	$spWeatherPicturePath = ($settings->spWeatherPicturePath == '') ? get_option('siteurl').'/wp-content/plugins/spweather/images/' : $settings->spWeatherPicturePath;
 	$result .= '<td><input type="text" class="regular-text" value="'.$spWeatherPicturePath.'" id="spWeatherPicturePath" name="spWeatherPicturePath"/> <span class="description">'.__('Change only, when you want to use your own pictures (names must be the same)', 'spWeather').'</span></td>';
 	$result .= '</tr>';
 	$result .= '<tr valign="top">';
@@ -207,7 +207,7 @@ class spWeather_objectbuilder {
 			file_put_contents($path . $icon, $new_icon);
 		}
 		$settings = spWeatherGetSettings();
-		$spWeatherPicturePath = ($settings->spWeatherPicturePath == '') ? get_option('siteurl').'/wp-content/plugins/spWeather/images/' : $settings->spWeatherPicturePath;
+		$spWeatherPicturePath = ($settings->spWeatherPicturePath == '') ? get_option('siteurl').'/wp-content/plugins/spweather/images/' : $settings->spWeatherPicturePath;
 		return $spWeatherPicturePath . $icon;
 	}
 
