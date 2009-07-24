@@ -28,7 +28,7 @@ Then include it in your sidebar e.g. with the following code:
 1. Configs menu
 2. View on blog
 
-== Change Log ==
+== Changelog ==
 
 * v1.6.1 	17.07.2009 added language fi_FI **Thanks to Jaska**
 * v1.6 		16.07.2009 speed optimization
