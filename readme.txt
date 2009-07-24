@@ -17,6 +17,8 @@ Then include it in your sidebar e.g. with the following code:
 
 == Installation ==
 
+**Precondition for spWeather is PHP5 on your webserver!**
+
 1. Upload spWeather to the /wp-content/plugins/ directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Adjust the options
