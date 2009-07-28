@@ -4,7 +4,7 @@ Donate link: http://www.scriptpara.de/skripte/spweather/
 Tags: weather, google
 Requires at least: 2.7
 Tested up to: 2.8
-Stable tag: 1.6.1 
+Stable tag: 1.7
 
 This Plugin gets the weather from google.de/google.com and shows the weather now and a 4 days forecast with tiny pics
 
@@ -17,8 +17,6 @@ Then include it in your sidebar e.g. with the following code:
 
 == Installation ==
 
-**Precondition for spWeather is PHP5 on your webserver!**
-
 1. Upload spWeather to the /wp-content/plugins/ directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Adjust the options
@@ -28,8 +26,9 @@ Then include it in your sidebar e.g. with the following code:
 1. Configs menu
 2. View on blog
 
-== Changelog ==
+== Change Log ==
 
+* v1.7		28.07.2009 widget **Thanks to summtrulle.de**
 * v1.6.1 	17.07.2009 added language fi_FI **Thanks to Jaska**
 * v1.6 		16.07.2009 speed optimization
 * v1.5 		14.07.2009 now you can choose between 2 templates or make them yourself
