@@ -1,0 +1,151 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: spWeather_fi\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-16 18:22+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Sebastian Klaus <sk@hdnet.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: C:\\D\\Blogit\\plugins\\spweather\n"
+"X-Poedit-SearchPath-1: C:\\D\\Blogit\\plugins\\spweather\\templates\n"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:19
+msgid "Weather settings"
+msgstr "S&auml;&auml; asetukset"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:47
+msgid "I said: Max. 4 days for the forecast ;-)"
+msgstr "Siis enint&auml;&auml;n 4 p&auml;iv&auml;n ennuste ;-)"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:49
+msgid "Settings saved"
+msgstr "Asetukset tallennettu"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:58
+msgid "Settings"
+msgstr "Asetukset"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:62
+msgid "Language"
+msgstr "Kieli"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:68
+msgid "German"
+msgstr "Saksa"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:69
+msgid "English"
+msgstr "Englanti"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:70
+msgid "Finnish"
+msgstr "Suomi"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:72
+msgid "Select your display language"
+msgstr "Valitse n&auml;ytt&ouml;kieli"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:75
+msgid "Template"
+msgstr "Malli"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:87
+msgid "Select your template"
+msgstr "Valitse malli"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:90
+msgid "Country, region or city"
+msgstr "Maa, alue tai kaupunki"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:92
+msgid "Try different spellings, if you get no results"
+msgstr "Kokeile eri kirjoitusasuja, jos s&auml;&auml;tietoja ei näy"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:96
+msgid "Picturs folder"
+msgstr "Kuvakansio"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:98
+msgid "Change only, when you want to use your own pictures (names must be the same)"
+msgstr "Vaihda vain, jos haluat k&auml;ytt&auml;&auml; omia kuviasi (nimien t&auml;ytyy t&auml;sm&auml;t&auml;)"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:101
+msgid "Forecast"
+msgstr "Ennuste"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:102
+msgid "days (max 4)"
+msgstr "p&auml;iv&auml;&auml; (enint&auml;&auml;n 4)"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:105
+msgid "Show images"
+msgstr "N&auml;yt&auml; kuvat"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:107
+msgid "Should weather images been shown?"
+msgstr "N&auml;ytet&auml;&auml;nk&ouml; s&auml;&auml;kuvakkeet vimpaimessa?"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:110
+msgid "Show Min/Max"
+msgstr "N&auml;yt&auml; alin ja ylin"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:112
+msgid "Show Min and Max or only Max Degrees in the forecast"
+msgstr "N&auml;ytet&auml;&auml;nk&ouml; ennusteissa alin ja ylin l&auml;mp&ouml;tila vai vain ylin"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:116
+msgid "Save Changes"
+msgstr "Tallenna muutokset"
+
+#: C:\D\Blogit\plugins\spweather/spweather.php:167
+msgid "Please configure spWeather settings"
+msgstr "Ole hyv&auml; ja m&auml;&auml;rit&auml; spWeatherin asetukset"
+
+#: C:\D\Blogit\plugins\spweather/templates/default.php:2
+#: C:\D\Blogit\plugins\spweather\templates/default.php:2
+msgid "Actual in"
+msgstr "Nyt kohteessa "
+
+#: C:\D\Blogit\plugins\spweather/templates/default.php:10
+#: C:\D\Blogit\plugins\spweather/templates/default.php:28
+#: C:\D\Blogit\plugins\spweather/templates/default.php:29
+#: C:\D\Blogit\plugins\spweather/templates/default.php:31
+#: C:\D\Blogit\plugins\spweather/templates/horizontal.php:9
+#: C:\D\Blogit\plugins\spweather/templates/horizontal.php:26
+#: C:\D\Blogit\plugins\spweather/templates/horizontal.php:27
+#: C:\D\Blogit\plugins\spweather/templates/horizontal.php:29
+#: C:\D\Blogit\plugins\spweather\templates/default.php:10
+#: C:\D\Blogit\plugins\spweather\templates/default.php:28
+#: C:\D\Blogit\plugins\spweather\templates/default.php:29
+#: C:\D\Blogit\plugins\spweather\templates/default.php:31
+#: C:\D\Blogit\plugins\spweather\templates/horizontal.php:9
+#: C:\D\Blogit\plugins\spweather\templates/horizontal.php:26
+#: C:\D\Blogit\plugins\spweather\templates/horizontal.php:27
+#: C:\D\Blogit\plugins\spweather\templates/horizontal.php:29
+msgid "Degrees"
+msgstr "astetta"
+
+#: C:\D\Blogit\plugins\spweather/templates/default.php:28
+#: C:\D\Blogit\plugins\spweather/templates/horizontal.php:26
+#: C:\D\Blogit\plugins\spweather\templates/default.php:28
+#: C:\D\Blogit\plugins\spweather\templates/horizontal.php:26
+msgid "Min."
+msgstr "alin"
+
+#: C:\D\Blogit\plugins\spweather/templates/default.php:29
+#: C:\D\Blogit\plugins\spweather/templates/horizontal.php:27
+#: C:\D\Blogit\plugins\spweather\templates/default.php:29
+#: C:\D\Blogit\plugins\spweather\templates/horizontal.php:27
+msgid "Max."
+msgstr "ylin"
+
+#~ msgid "Weather"
+#~ msgstr "S&auml;&auml;"
+
