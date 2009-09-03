@@ -28,6 +28,7 @@ Then include it in your sidebar e.g. with the following code:
 
 == Change Log ==
 
+* v1.7.1 	03.09.2009 added language da_DK **Thanks to Kristian**
 * v1.7		28.07.2009 widget **Thanks to summtrulle.de**
 * v1.6.1 	17.07.2009 added language fi_FI **Thanks to Jaska**
 * v1.6 		16.07.2009 speed optimization
