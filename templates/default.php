@@ -3,7 +3,7 @@ $return = '<strong>'.__('Actual in', 'spWeather').' '.$settings->spWeatherRegion
 $return .= '<table>';
 $return .= '<tr>';
 if($settings->spWeatherImages == 'on'){
-	$return .= '<td><img src="'.$result->icon.'" /></td>';
+	$return .= '<td><img src="'.$result->icon.'" alt="'.$result->condition.'" /></td>';
 }
 $return .= '<td valign="top">';
 $return .= $result->condition.'<br/>';
@@ -19,7 +19,7 @@ if($settings->spWeatherForecast != 0 || !empty($settings->spWeatherForecast)){
 		if($settings->spWeatherForecast >= $x){
 			$return .= '<tr>';
 			if($settings->spWeatherImages == 'on'){
-				$return .= '<td><img src="'.$entry->icon.'" /></td>';
+				$return .= '<td><img src="'.$entry->icon.'" alt="'.$entry->condition.'" /></td>';
 			}
 			$return .= '<td valign="top">';
 			$return .= '<strong>'.$entry->dow.'</strong><br/>';
