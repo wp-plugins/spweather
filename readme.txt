@@ -4,7 +4,7 @@ Donate link: http://www.scriptpara.de/skripte/spweather/
 Tags: weather, google
 Requires at least: 2.7
 Tested up to: 2.8
-Stable tag: 1.7
+Stable tag: 1.7.2
 
 This Plugin gets the weather from google.de/google.com and shows the weather now and a 4 days forecast with tiny pics
 
@@ -28,6 +28,7 @@ Then include it in your sidebar e.g. with the following code:
 
 == Change Log ==
 
+* v1.7.2 	03.09.2009 added alt tags to images
 * v1.7.1 	03.09.2009 added language da_DK **Thanks to Kristian**
 * v1.7		28.07.2009 widget **Thanks to summtrulle.de**
 * v1.6.1 	17.07.2009 added language fi_FI **Thanks to Jaska**

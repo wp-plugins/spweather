@@ -4,7 +4,7 @@
  Plugin URI: http://www.scriptpara.de/skripte/spweather/
  Description: Shows the actual weather in your Region
  Author: Sebastian Klaus
- Version: 1.7
+ Version: 1.7.2
  Author URI: http://www.scriptpara.de
  */
 
