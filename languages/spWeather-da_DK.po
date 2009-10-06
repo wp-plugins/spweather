@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: spWeather_da\n"
+"POT-Creation-Date: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Kristian Vad Nielsen <kvn@websphere.dk>\n"
+"Language-Team: \n"
+
+msgid "Weather"
+msgstr "Vejret"
+
+msgid "Weather settings"
+msgstr "Vejrindstillinger"
+
+msgid "Settings saved"
+msgstr "Indstillinger gemt"
+
+msgid "Settings"
+msgstr "Indstillinger"
+
+msgid "Language"
+msgstr "Sprog"
+
+msgid "German"
+msgstr "Tysk"
+
+msgid "English"
+msgstr "Engelsk"
+
+msgid "Select your display language"
+msgstr "Vælg sprog"
+
+msgid "Country, region or city"
+msgstr "Land, region eller by"
+
+msgid "Try different spellings, if you get no results"
+msgstr "Prøv en anden stavemåde hvis du ikke får noget resultat"
+
+msgid "Picturs folder"
+msgstr "Billedmappe"
+
+msgid "Template"
+msgstr "Skabelon"
+
+msgid "Select your template"
+msgstr "Vælg skabelon"
+
+msgid "Change only, when you want to use your own pictures (names must be the same)"
+msgstr "Skal kun ændres hvis du vil anvende egne billeder (navne skal være de sammme)"
+
+msgid "Degrees"
+msgstr "Grader"
+
+msgid "days (max 4)"
+msgstr "Dage (højest 4)"
+
+msgid "I said: Max. 4 days for the forecast ;-)"
+msgstr "Jeg sagde: Højest 4 dages vejrudsigt ;-)"
+
+msgid "Show images"
+msgstr "Vis billeder"
+
+msgid "Should weather images been shown?"
+msgstr "Skal vejrbilleder vises?"
+
+msgid "Actual in"
+msgstr "Lige nu i"
+
+msgid "Min."
+msgstr "Min."
+
+msgid "Max."
+msgstr "Max."
+
+msgid "Show Min/Max"
+msgstr "Vis min/max værdier"
+
+msgid "Show Min and Max or only Max Degrees in the forecast"
+msgstr "Vis min og max eller kun max gradtal i vejrudsigten"
+
